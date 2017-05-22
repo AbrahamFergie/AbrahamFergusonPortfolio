@@ -1,12 +1,15 @@
 {
-  "name": "freelancer",
-  "title": "Freelancer",
+  "name": "Portfolio",
+  "title": "Abe's Portfolio",
   "version": "3.3.7+1",
-  "homepage": "http://startbootstrap.com/template-overviews/freelancer",
+  "homepage": "",
   "author": "Start Bootstrap",
   "license": {
     "type": "MIT",
-    "url": "https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE"
+    "url": "https://github.com/AbrahamFergie/gh-pages/LICENSE"
+  },
+  "scripts": {
+    "start": "node index.html"
   },
   "devDependencies": {
     "bootstrap": "^3.3.7",
@@ -23,6 +26,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/BlackrockDigital/startbootstrap-freelancer.git"
+    "url": "https://github.com/AbrahamFergie.git"
+  },
+  "dependencies": {
+    "google-auth-library": "^0.10.0",
+    "googleapis": "^19.0.0"
+  },
+  "engines": {
+    "node": "^6.9.7",
+    "npm": "^4.2.0"
   }
 }
