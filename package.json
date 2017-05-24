@@ -3,17 +3,26 @@
   "title": "Abe's Portfolio",
   "version": "3.3.7+1",
   "homepage": "",
-  "author": "Start Bootstrap",
+  "author": "Abraham Ferguson",
   "license": {
     "type": "MIT",
     "url": "https://github.com/AbrahamFergie/gh-pages/LICENSE"
   },
   "scripts": {
-    "start": "node index.html"
+    "start": "node app.js",
+    "start:dev": "nodemon app.js"
   },
   "devDependencies": {
+    "nodemon": "^1.11.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AbrahamFergie.git"
+  },
+  "dependencies": {
     "bootstrap": "^3.3.7",
     "browser-sync": "^2.13.0",
+    "express": "^4.15.3",
     "font-awesome": "^4.6.3",
     "gulp": "^3.9.1",
     "gulp-clean-css": "^2.0.10",
@@ -23,14 +32,6 @@
     "gulp-rename": "^1.2.2",
     "gulp-uglify": "^1.5.4",
     "jquery": "^1.11.3"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/AbrahamFergie.git"
-  },
-  "dependencies": {
-    "google-auth-library": "^0.10.0",
-    "googleapis": "^19.0.0"
   },
   "engines": {
     "node": "^6.9.7",
