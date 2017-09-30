@@ -8,7 +8,7 @@ body {
   overflow-x: hidden;
   background-color: #fafafa;
 }
-p {
+p, figcaption {
   font-size: 20px;
   font-family: Open Sans, sans-serif;
   color: #041e18;
@@ -38,9 +38,6 @@ h6 {
 h1 {
   font-size: 3.5em;
 }
-h2 {
-  text-shadow: 0px 20px 45px #888888;
-}
 h3 {
   font-size: 3em;
   display: flex;
@@ -48,7 +45,6 @@ h3 {
   justify-content: center;
   position: inherit;
   top: 20px;
-  text-shadow: 0px 20px 75px #888888;
   text-transform: none;
   border-radius: 5px;
   padding-bottom: 5px;
@@ -58,7 +54,7 @@ h5 {
 }
 li {
   border-radius: 5px;
-  font-size: 20px;
+  font-size: 15px;
 }
 hr{
   border: 0;
@@ -103,6 +99,10 @@ hr.star-primary:after {
 }
 .cat-paw-img {
   height: 8em;
+  position: absolute;
+  top: 2em;
+  left: 32em;
+  transform: rotateZ(-12deg);
 }
 form {
   width: 75%;
@@ -175,6 +175,33 @@ header .intro-text .skills {
     font-size: 1.75em;
   }
 }
+.stack-figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+.card-stack {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 15px;
+  margin-left: 27px;
+}
+.card-col-1 {
+  margin-bottom: 5px;
+  background-color: #fafafa;
+  border-radius: 5px;
+  padding: 10px 10px 0px 10px;
+}
+.diagram-col-1 {
+  height: 44.7em;
+  margin-bottom: 5px;
+  background-color: #fafafa;
+  border-radius: 5px;
+  border: 2px groove #fafafa;
+  padding: 10px 10px 0px 10px;
+}
 .stack-img {
   margin-top: 2em;
 }
@@ -189,6 +216,15 @@ header .intro-text .skills {
 .intro-text {
   text-shadow: 0px 20px 45px #1c1c1c;;
   padding-bottom: 20px;
+}
+.item-image {
+  height: 65px;
+}
+.iframer {
+  margin-top: 10px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
 }
 .binary-underline{
   /*text-align: center;*/
@@ -208,7 +244,6 @@ header .intro-text .skills {
   text-transform: uppercase;
   font-weight: 700;
   border: none;
-  border-radius: 5px;
 }
 .navbar-custom .navbar-brand {
   font-family: Josefin Sans, sans-serif;
@@ -328,16 +363,29 @@ section.success {
   section.first {
     padding-top: 75px;
   }
-}
-#portfolio .portfolio-item {
-  margin: 0 0 15px;
-  right: 0;
+  .card-stack {
+    margin-left: -13px;
+    flex-direction: column;
+  }
+  .cat-paw-img {
+    top: 0em;
+    left: 4em;
+  }
+  .diagram-col-1 {
+    height: 14em;
+  }
 }
 #portfolio .portfolio-item .portfolio-link {
   display: block;
   position: relative;
   max-width: 400px;
   margin: 0 auto;
+}
+.portfolio-item, .portfolio-item-right, .portfolio-app-item {
+  border: 2px groove #fafafa;
+}
+.portfolio-app-item {
+  height: 48em;
 }
 .portfolio-link{
   height: 100%;
@@ -355,7 +403,7 @@ section.success {
 .portfolio-item-right {
   background-color: #fafafa;
   border-radius: 5px;
-  padding: 56px;
+  padding: 16px;
 }
 #portfolio .portfolio-item .portfolio-link .caption:hover {
   opacity: 1;
@@ -389,9 +437,8 @@ section.success {
     height: 100%;
   }
   #portfolio .portfolio-item {
-    padding-top: 1.6%;
-    margin: 0 0 30px;
-    height: 17em;
+    padding-top: 3%;
+    height: 20em;
   }
 }
 .portfolio-row {
@@ -401,7 +448,7 @@ section.success {
   margin: 5px 0px 5px 0px;
   z-index: -1;
   box-shadow: 0px 0px 20px #888888;
-  padding-top: 5px;
+  padding: 5px;
 }
 
 .floating-label-form-group {
@@ -683,7 +730,6 @@ fieldset[disabled] .btn-success.active {
 }
 .section-about {
   color: #fafafa;
-  text-shadow: 0px 20px 45px #1c1c1c;
 }
 .section-contact {
   color: #2C3E50;
