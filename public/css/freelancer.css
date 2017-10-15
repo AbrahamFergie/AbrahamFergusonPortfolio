@@ -141,7 +141,12 @@ form label {
 }
 header {
   text-align: center;
-  background: #2da6f0;
+  /*background: #2da6f0;*/
+  background: linear-gradient(358deg, #112038, #2e3c85, #2da6f0);
+  background-size: 600% 600%;
+  -webkit-animation: AnimationName 100s ease infinite;
+  -moz-animation: AnimationName 60s ease infinite;
+  animation: AnimationName 15s linear infinite;
   color: #fafafa;
 }
 header .container {
@@ -237,6 +242,11 @@ header .intro-text .skills {
   font-weight: 0;
   text-shadow: 1px 1px 2px #1c1c1c;
   width: 100%;
+}
+#my-photo {
+  height: 20em;
+  width: 17em;
+  margin-bottom: 2em
 }
 .navbar-custom {
   background: #2C3E50;
@@ -340,9 +350,6 @@ header .intro-text .skills {
   background-color: #1c1c1c;
   height: 13em;
 }
-.blurb-text {
-  font-family: 'Roboto Slab', serif;
-}
 section {
   padding: 100px 0;
 }
@@ -353,10 +360,21 @@ section h2 {
   color: #fafafa;
 }
 section.success {
-  background: #2da6f0;
+  /*background: #2da6f0;*/
+
+  background: linear-gradient(358deg, #112038, #2e3c85, #2da6f0);
+  background-size: 600% 600%;
+  -webkit-animation: AnimationName 100s ease infinite;
+  -moz-animation: AnimationName 60s ease infinite;
+  animation: AnimationName 15s linear infinite;
+
   color: #fafafa;
 }
 @media (max-width: 767px) {
+  #my-photo {
+    height: 18em;
+    width: 16em;
+  }
   section {
     padding: 75px 0;
   }
@@ -772,4 +790,21 @@ div#maincontent {
 .resume-display {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+}
+
+@-webkit-keyframes AnimationName {
+  0%{background-position:50% 0%}
+  50%{background-position:50% 100%}
+  100%{background-position:50% 0%}
+}
+@-moz-keyframes AnimationName {
+  0%{background-position:50% 0%}
+  50%{background-position:50% 100%}
+  100%{background-position:50% 0%}
+}
+@keyframes AnimationName {
+  0%{background-position:50% 0%}
+  50%{background-position:50% 100%}
+  100%{background-position:50% 0%}
+}
